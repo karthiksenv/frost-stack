@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#e5edf0" />
+    <title>Frost Stack</title><link rel="icon" href="data:," />
+  </head>
+  <body>
+    <main id="app" aria-label="Frost Stack game"></main>
+    <div id="hud">
+      <header><div><small>A LITTLE WINTER OUTPOST</small><h1>FROST <span>STACK</span></h1></div>
+        <div class="wallet">CASH <strong id="cash">$0</strong></div></header>
+      <aside><small>YOUR NEXT ADVENTURE</small><h2 id="objective">Open the frozen pond</h2>
+        <p id="progress">Earn $200 at the trading post.</p><progress id="goal" max="200" value="0"></progress></aside>
+      <div id="labels"></div>
+      <footer><div><strong id="inventory">Backpack empty</strong><p id="activity" role="status">Walk to the trees to collect wood.</p></div>
+        <p class="controls"><b>WASD / ARROWS</b> to move · <b>CLICK / TAP</b> to walk<br />Stand inside a colored zone to work.</p></footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

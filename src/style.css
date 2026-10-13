@@ -1,0 +1,34 @@
+:root { font-family: 'Segoe UI', system-ui, sans-serif; color: #29444d; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; overflow: hidden; background: #dce8ed; }
+#app, #hud { position: fixed; inset: 0; }
+canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+#hud { pointer-events: none; }
+header { position: absolute; inset: 30px 36px auto; display: flex; justify-content: space-between; align-items: start; }
+small { font-size: 10px; font-weight: 700; letter-spacing: 2px; }
+h1, h2, strong { font-family: 'Trebuchet MS', system-ui, sans-serif; }
+h1 { margin: 6px 0; font-size: 32px; letter-spacing: -1.5px; }
+h1 span { color: #558477; }
+.wallet { background: #f9fcf6e8; padding: 14px 22px; border: 1px solid #fff; border-radius: 18px; font-size: 10px; letter-spacing: 1px; }
+.wallet strong { display: block; font-size: 30px; letter-spacing: -1px; color: #46745e; }
+aside { position: absolute; top: 130px; left: 36px; width: 235px; padding: 19px; background: #f8fcf6cc; border-radius: 16px; border: 1px solid #ffffffb0; }
+h2 { margin: 8px 0; font-size: 18px; }
+p { font-size: 12px; line-height: 1.6; margin: 7px 0 0; }
+progress { margin-top: 14px; width: 100%; height: 6px; accent-color: #60896b; }
+footer { position: absolute; bottom: 26px; left: 36px; right: 36px; display: flex; justify-content: space-between; align-items: end; gap: 20px; }
+footer > div { padding: 15px 20px; border: 1px solid #fff; border-radius: 14px; background: #f8fcf5e8; }
+footer strong { font-size: 12px; letter-spacing: 1px; }
+.controls { text-align: right; padding: 10px; border-radius: 10px; background: #ecf4f4cc; }
+.controls b { font-size: 10px; letter-spacing: 0.5px; }
+.zone-label { position: absolute; transform: translate(-50%, 0); white-space: nowrap; font-size: 9px; font-weight: 700; letter-spacing: 1px; color: #46606a; background: #fffffff0; border-radius: 6px; padding: 7px 10px; box-shadow: 0 3px 8px #20384410; }
+.zone-label.buy { color: #fff; background: #38556a; }
+@media (max-width: 650px) {
+  header { inset: 18px 18px auto; }
+  h1 { font-size: 25px; }
+  aside { top: 110px; left: 18px; width: 190px; padding: 12px; }
+  aside small { font-size: 8px; }
+  h2 { font-size: 15px; }
+  footer { bottom: 18px; left: 18px; right: 18px; }
+  .controls { display: none; }
+  .zone-label { font-size: 8px; padding: 5px 7px; }
+}
